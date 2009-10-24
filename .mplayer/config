@@ -1,0 +1,34 @@
+# ~/.mplayer/config
+
+dvd-device=/dev/cdrom
+ao=alsa
+stop-xscreensaver=yes
+# don't set cache -- it seems like it makes mplayer stutter
+#cache=1024
+#cache=8092
+fs=1
+
+#vf=eq2=1.0:-0.8
+
+#########################################################################
+# Video options
+
+vo=xv,x11,
+#double="yes"
+
+# Allow sofware scaling if you use x11 for vo from the commandline
+zoom="1"
+#autoq=100
+
+#########################################################################
+# Subtitles
+
+subfont-autoscale=3
+subfont-text-scale=3
+subfont-osd-scale=6
+
+# Adjust matching fuzziness when searching for subtitles:
+# 0 exact match
+# 1 Load all subs containing movie name.
+# 2 Load all subs in the current directory.
+sub-fuzziness 1
