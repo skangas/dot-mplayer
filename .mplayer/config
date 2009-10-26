@@ -31,4 +31,4 @@ subfont-osd-scale=6
 # 0 exact match
 # 1 Load all subs containing movie name.
 # 2 Load all subs in the current directory.
-sub-fuzziness 1
+sub-fuzziness=1
