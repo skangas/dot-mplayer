@@ -1,5 +1,8 @@
 # ~/.mplayer/config
 
+nojoystick="1"
+nolirc="1"
+
 dvd-device=/dev/cdrom
 ao=pulse
 stop-xscreensaver=yes
