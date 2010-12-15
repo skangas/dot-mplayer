@@ -5,6 +5,7 @@ nolirc="1"
 
 dvd-device=/dev/cdrom
 ao=pulse
+af=scaletempo
 stop-xscreensaver=yes
 # don't set cache -- it seems like it makes mplayer stutter
 #cache=1024
