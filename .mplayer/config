@@ -1,16 +1,21 @@
 # ~/.mplayer/config
 
+dvd-device=/dev/cdrom
+ao=pulse
+
 nojoystick="1"
 nolirc="1"
 
-dvd-device=/dev/cdrom
-ao=pulse
-af=scaletempo
+fs=1
 stop-xscreensaver=yes
+
+af=scaletempo
 # don't set cache -- it seems like it makes mplayer stutter
 #cache=1024
 #cache=8092
-fs=1
+
+# simulate user activity every 30 seconds
+#heartbeat-cmd="xscreensaver-command -deactivate"
 
 #vf=eq2=1.0:-0.8
 
@@ -35,4 +40,4 @@ subfont-osd-scale=6
 # 0 exact match
 # 1 Load all subs containing movie name.
 # 2 Load all subs in the current directory.
-sub-fuzziness=1
+sub-fuzziness=2
