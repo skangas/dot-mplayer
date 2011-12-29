@@ -7,7 +7,7 @@ nojoystick="1"
 nolirc="1"
 
 fs=1
-stop-xscreensaver=yes
+stop-xscreensaver=1
 
 af=scaletempo
 # don't set cache -- it seems like it makes mplayer stutter
