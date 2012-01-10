@@ -20,7 +20,8 @@ af=scaletempo
 #########################################################################
 # Video options
 
-vo=vdpau,xvmc,xv,x11,
+vo=vdpau,xv,x11,
+#vo=vdpau,xvmc,xv,x11,
 
 # Allow sofware scaling if you use x11 for vo from the commandline
 zoom="1"
