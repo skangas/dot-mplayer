@@ -1,19 +1,28 @@
 # ~/.mplayer/config
 
+[default]
+
 dvd-device=/dev/cdrom
 ao=pulse
 
 nojoystick="1"
 nolirc="1"
-
 fs=1
-stop-xscreensaver=1
+idx=yes
 
 # Filter to make voices sound normal on higher playback speeds
 af=scaletempo
 
-# simulate user activity every 30 seconds
-#heartbeat-cmd="xscreensaver-command -deactivate"
+stop-xscreensaver=1 # stop gnome-screensaver
+heartbeat-cmd="nice -n19 xscreensaver-command -deactivate 1> /dev/null 2>/dev/null &" # stop xscreensaver
+
+# Increase the total volume even more than sound settings allow
+#softvol=1
+#softvol-max=600 # 10000 is max
+
+# requires xdotool installed but might be slighty less resource intensive when
+# using really old hw
+#heartbeat-cmd="xdotool key ctrl"
 
 #vf=eq2=1.0:-0.8
 
@@ -23,7 +32,9 @@ af=scaletempo
 vo=vdpau,xv,x11,
 #vo=vdpau,xvmc,xv,x11,
 
-# Allow sofware scaling if you use x11 for vo from the commandline
+#vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,
+
+# Allow software scaling if you use x11 for vo from the commandline
 zoom="1"
 #autoq=100
 
@@ -44,3 +55,12 @@ sub-fuzziness=2
 ass=1
 ass-font-scale=1.7
 
+# Set font encoding.
+subfont-encoding=unicode
+
+# Set subtitle file encoding.
+unicode=yes
+utf8=yes
+
+# Use English subtitles for DVD/MKV
+slang = eng,en
