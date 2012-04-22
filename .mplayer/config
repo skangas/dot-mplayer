@@ -53,7 +53,7 @@ sub-fuzziness=2
 
 # libass
 ass=1
-ass-font-scale=1.7
+#ass-font-scale=1.7
 
 # Set font encoding.
 subfont-encoding=unicode
