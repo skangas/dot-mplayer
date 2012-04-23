@@ -53,11 +53,21 @@ sub-fuzziness=2
 
 # libass
 ass=1
-ass-force-style=FontName=FreeSans,Default.Bold=1,OutlineColour=0x40000000
+ass-force-style=FontName=FreeSans,Default.Bold=1,PrimaryColour=&FFFF80FF,SecondaryColour=0xFFFFFFFF,BackColour=0xFFFFFFFF
 #ass-force-style="FontName=FreeSans,Default.Bold=1,PrimaryColour=0xFFFFFFFF,OutlineColour=0x40000000,Outline=1,Shadow=1,Italic=0,BackColour=0x40000000,SecondaryColour=0x40FFFFFF,BorderStyle=1,Underline=0,Strikeout=0"
 font="FreeSans:style=Bold"
 ass-font-scale=1.4
 embeddedfonts=true
+
+#ass-border-color=0x00000000
+# Sets the border (outline) color for text subtitles. The color format is RRGGBBAA. <-- actually it is AABBGGRR; 12345678 goes 78563412
+# transparency % value: 100 95 90 85 80 75 70 65 60 55 50 45 40 35 30 25 20 15 10 5  0
+# adding after   "0x" :  FF F2 E6 D9 CC BF B3 A6 99 8C 80 73 66 59 4D 40 33 26 1A 0D 00
+# e.g. "black" 25% transparent would be: 0x4000EFFF
+    
+#ass-color=0x0000FFFF
+# Sets the color for text subtitles. The color format is RRGGBBAA. <-- actually it is AABBGGRR; 12345678 goes 78563412
+# e.g. "process yellow" 15% transparent would be: 0x2600EFFF
 
 # Set font encoding.
 subfont-encoding=unicode
