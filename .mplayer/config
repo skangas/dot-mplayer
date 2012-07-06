@@ -3,7 +3,7 @@
 [default]
 
 dvd-device=/dev/cdrom
-ao=pulse
+ao=alsa
 
 nojoystick="1"
 nolirc="1"
