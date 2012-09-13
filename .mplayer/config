@@ -43,7 +43,7 @@ zoom="1"
 # Subtitles
 
 subfont-autoscale=3
-subfont-text-scale=3
+subfont-text-scale=5
 subfont-osd-scale=6
 
 # Adjust matching fuzziness when searching for subtitles:
