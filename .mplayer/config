@@ -11,10 +11,10 @@ fs=1
 idx=yes
 
 # Filter to make voices sound normal on higher playback speeds
-af=scaletempo
+#af=scaletempo
 
 stop-xscreensaver=1 # stop gnome-screensaver
-heartbeat-cmd="nice -n19 xscreensaver-command -deactivate 1> /dev/null 2>/dev/null &" # stop xscreensaver
+#heartbeat-cmd="nice -n19 xscreensaver-command -deactivate 1> /dev/null 2>/dev/null &" # stop xscreensaver
 
 # Increase the total volume even more than sound settings allow
 #softvol=1
@@ -29,8 +29,8 @@ heartbeat-cmd="nice -n19 xscreensaver-command -deactivate 1> /dev/null 2>/dev/nu
 #########################################################################
 # Video options
 
-#vo=xv,x11,
-vo=vdpau,xv,x11,
+vo=xv,x11,
+#vo=vdpau,xv,x11,
 #vo=vdpau,xvmc,xv,x11,
 
 #vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,
