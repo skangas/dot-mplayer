@@ -12,9 +12,10 @@ idx=yes
 
 # Filter to make voices sound normal on higher playback speeds
 #af=scaletempo
+af=volnorm
 
 stop-xscreensaver=1 # stop gnome-screensaver
-#heartbeat-cmd="nice -n19 xscreensaver-command -deactivate 1> /dev/null 2>/dev/null &" # stop xscreensaver
+heartbeat-cmd="nice -n19 xscreensaver-command -deactivate 1> /dev/null 2>/dev/null &" # stop xscreensaver
 
 # Increase the total volume even more than sound settings allow
 #softvol=1
@@ -29,8 +30,8 @@ stop-xscreensaver=1 # stop gnome-screensaver
 #########################################################################
 # Video options
 
-vo=xv,x11,
-#vo=vdpau,xv,x11,
+#vo=xv,x11,
+vo=vdpau,xv,x11,
 #vo=vdpau,xvmc,xv,x11,
 
 #vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,
@@ -76,3 +77,9 @@ utf8=yes
 slang = eng,en
 
 osdlevel=1
+
+
+[vo.vdpau]
+vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,ffodivxvdpau,
+# Most video filters do not work with vdpau.
+vf-clr=yes
