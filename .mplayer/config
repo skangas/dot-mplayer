@@ -70,6 +70,7 @@ embeddedfonts=true
 subfont-encoding=unicode
 
 # Set subtitle file encoding.
+sub_cp = "cp1256"
 unicode=yes
 utf8=yes
 
