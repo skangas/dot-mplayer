@@ -55,16 +55,16 @@ sub-fuzziness=2
 
 # libass
 ass=1
-
-ass-force-style=FontName=Tahoma,Kerning=1,Default.Bold=1,PrimaryColour=H0000FFFF,SecondaryColour=H00FFFFFF,BackColour=HFFFFFFFF,OutlineColour=H00000000,BorderStyle=1,Underline=0,Strikeout=0,Italic=0,Shadow=1
+ass-force-style=FontName=Verdana,Kerning=1,Default.Bold=1,PrimaryColour=H00FFFFFF,SecondaryColour=H00FFFFFF,BackColour=HFFFFFFFF,OutlineColour=H00000000,BorderStyle=1,Underline=0,Strikeout=0,Italic=0,Shadow=1
 
 # Color format: HAARRGGBB
 
 # Good fonts for subtitles: Tahoma / Verdana
 
-ass-font-scale=1.0
+subfont-outline=4.0
+ass-font-scale=1.5
 
-embeddedfonts=true
+embeddedfonts=false
 
 # Set font encoding.
 subfont-encoding=unicode
