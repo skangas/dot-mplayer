@@ -62,7 +62,7 @@ ass-force-style=FontName=Verdana,Kerning=1,Default.Bold=1,PrimaryColour=H00FFFFF
 # Good fonts for subtitles: Tahoma / Verdana
 
 subfont-outline=4.0
-ass-font-scale=1.5
+ass-font-scale=1.0
 
 embeddedfonts=false
 
