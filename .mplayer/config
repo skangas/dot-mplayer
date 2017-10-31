@@ -11,7 +11,7 @@ fs=1
 idx=yes
 
 # Filter to make voices sound normal on higher playback speeds
-#af=scaletempo
+af=scaletempo
 af=volnorm
 
 stop-xscreensaver=1 # stop gnome-screensaver
